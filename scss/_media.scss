@@ -1,0 +1,432 @@
+@media screen and (max-width: 1330px) {
+   .skills {
+      &__list {
+         .lists {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            li {
+               .list__img {
+                  flex: 0 1 62px;
+                  padding: 0 0 29.95px;
+               }
+            }
+            li:first-child {
+               margin: 0 0 76px 0;
+            }
+            li:nth-child(2) {
+               margin: 0 0 76px 0;
+            }
+         }
+      }
+   }
+}
+// -------------------------------------
+@media screen and (max-width: 992px) {
+   .hero {
+      .container__hero {
+         .hero__box {
+            .hero__img {
+               height: 590px;
+               overflow: hidden;
+               .max__bg {
+                  display: none;
+               }
+               .min__bg {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+               }
+            }
+            .about__hero {
+               top: 15%;
+               left: 8;
+               transform: scale(1) translate(8px, 15%);
+            }
+         }
+      }
+   }
+   .skills {
+      &__list {
+         .lists {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            li {
+               .list__img {
+                  flex: 0 1 50%;
+                  padding: 0 0 29.95px;
+               }
+            }
+            li:first-child {
+               margin: 0 0 76px 0;
+            }
+            li:nth-child(2) {
+               margin: 0 0 76px 0;
+            }
+         }
+      }
+   }
+   // ----------------
+   .portfolio {
+      &__subtitle {
+         .portfolio__view {
+            .view__time {
+               flex-wrap: wrap;
+               flex: 0 0 180px;
+               margin: 5px;
+            }
+            .view__time:not(:last-child) {
+               margin: 0 2.5px;
+            }
+         }
+      }
+   }
+   // ---------------------------------------
+   .price {
+      &__title {
+         h2 {
+            @include blocktitle();
+         }
+      }
+      &__subtitle {
+         .cards {
+            flex-wrap: wrap;
+            .card__box {
+               flex: 0 1 45%;
+            }
+            .card__box:not(:last-child) {
+               margin: 0 0 25px 0;
+            }
+            .card__box:first-child {
+               margin: 0 25px 25px 0;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .hero {
+      .container__hero {
+         .hero__box {
+            .about__hero {
+               top: 22%;
+               left: 60px;
+            }
+         }
+      }
+   }
+   // --------------------------------------
+   .section__title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 60px 0;
+      div {
+         width: 15%;
+         height: 2px;
+         background-color: #bdae82;
+      }
+      div:first-child {
+         margin: 0 25px 0 0;
+      }
+      div:last-child {
+         margin: 0 0 0 25px;
+      }
+   }
+   // ------------------------------------------
+   .skills {
+      margin: 80px 0 0 0;
+      &__title {
+         margin: 0 0 48px 0;
+         h2 {
+            @include blocktitle();
+         }
+      }
+      &__list {
+         .lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            li {
+               flex: 0 0 50%;
+               text-align: center;
+               margin: 0;
+               padding: 0 15px;
+               display: flex;
+               flex-direction: column;
+               .list__img {
+                  flex: 0 1 62px;
+                  padding: 0 0 50px;
+                  img {
+                     max-width: 100%;
+                     height: auto;
+                  }
+               }
+               .list__title:not(:last-child) {
+                  padding: 0;
+               }
+            }
+         }
+      }
+   }
+   // --------------------------------------
+   .portfolio {
+      margin: 135px 0 0 0;
+      &__title {
+         margin: 0 0 46px 0;
+      }
+      .portfolio__subtitle {
+         .portfolio__view {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto 60px;
+            flex-wrap: wrap;
+            max-width: 450px;
+            .view__time {
+               flex-wrap: wrap;
+               flex: 0 1 220px;
+               margin: 2.5px;
+            }
+            .view__time:not(:last-child) {
+               margin: 2.5px;
+            }
+         }
+         .portfoio__box {
+            .portfoio__blocks {
+               .portfolio__block1,
+               .portfolio__block2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  .portfolio__box {
+                     img {
+                        max-width: 450px;
+                     }
+                  }
+                  .portfolio__box:not(:last-child) {
+                     padding: 0 0 25px 0;
+                  }
+               }
+               .portfolio__block1 {
+                  margin: 0 0 25px 0;
+               }
+               .portfolio__block1,
+               .portfolio__block2:not(:last-child) {
+                  margin: 0 0 25px 0;
+               }
+            }
+         }
+      }
+   }
+   // -------------------------------------
+   .video {
+      margin: 140px 0 0 0;
+      .container__mobile {
+         padding: 0;
+      }
+      .video__block {
+         .img__play {
+            top: 50%;
+            left: 52%;
+            transform: scale(1) translate(-52%, -50%);
+            img {
+               width: 50%;
+               height: auto;
+            }
+         }
+      }
+   }
+   // -------------------------------------
+   .price {
+      &__title {
+         h2 {
+            @include blocktitle();
+         }
+      }
+      &__subtitle {
+         .cards {
+            .card__box {
+               flex: 0 1 420px;
+            }
+            .card__box:not(:last-child) {
+               margin: 0 0 50px 0;
+            }
+         }
+      }
+   }
+   // -----------------------------------
+   .contacts {
+      .container__block {
+         margin-bottom: 0;
+         .container__bg {
+            .big__footer-img {
+               display: none;
+            }
+            .min__footer-img {
+               display: block;
+               max-width: 100%;
+               height: auto;
+            }
+         }
+      }
+      .contact {
+         margin: 60px 0 0 0;
+         right: 50%;
+         transform: scale(1) translate(50%, 0);
+         .container {
+            .contact__title {
+               margin: 0 0 40px 0;
+            }
+            .contact__forms {
+               .form {
+                  input:not(:last-child) {
+                     margin: 0 0 20px 0;
+                  }
+
+                  textarea:not(:last-child) {
+                     margin: 0 0 39px 0;
+                  }
+               }
+            }
+            button {
+               margin: 0 auto;
+            }
+         }
+      }
+   }
+   //----------------------------------------
+   .footer {
+      .container {
+         .footer__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .footer__github {
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               padding: 20px 0 0 0;
+               div:not(:last-child) {
+                  margin: 0 20px 0 0;
+               }
+            }
+            .footer__school {
+               padding: 0 0 12px 0;
+            }
+            .footer__social {
+               padding: 0 0 20px 0;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 670px) {
+   .contacts {
+      .container__block {
+         .container__bg {
+            height: 493px;
+            overflow: hidden;
+            .min__footer-img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+      }
+      .contact {
+         margin: 30px 0 0 0;
+      }
+   }
+}
+
+@media screen and (max-width: 619px) {
+   .contacts {
+      .container__block {
+         .container__bg {
+            height: 493px;
+            overflow: hidden;
+            .min__footer-img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+      }
+      .contact {
+         margin: 10px 0 0 0;
+         .container {
+            width: auto;
+            margin: 0;
+            .contact__title {
+               h2 {
+                  font-size: 22px;
+               }
+            }
+            .contact__forms {
+               .form {
+                  align-items: center;
+                  input,
+                  textarea {
+                     max-width: 300px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+@media screen and (max-width: 576px) {
+   .hero {
+      .container__hero {
+         .hero__box {
+            .hero__img {
+               height: 400px;
+            }
+            .about__hero {
+               top: 18%;
+               left: 20px;
+               .title {
+                  font-size: 28px;
+               }
+               .subtitle {
+                  font-size: 15px;
+                  padding: 0 15px 0 0;
+               }
+               .subtitle:not(:last-child) {
+                  margin: 0 0 30px 0;
+               }
+               .button {
+                  margin: 0 auto;
+               }
+            }
+         }
+      }
+   }
+   // -----------------------------------
+   .skills {
+      margin: 80px 0 0 0;
+      &__title {
+         margin: 0 0 48px 0;
+         h2 {
+            @include blocktitle();
+         }
+      }
+      &__list {
+         .lists {
+            li {
+               flex: 0 0 100%;
+               padding: 0;
+            }
+         }
+      }
+   }
+}

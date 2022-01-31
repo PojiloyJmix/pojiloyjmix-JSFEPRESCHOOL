@@ -1,0 +1,40 @@
+body,
+html {
+   transition: all 1s ease;
+   background-color: #000;
+}
+.sun {
+   fill: #bdae82;
+   transition: all 0.3 ease;
+}
+/* ------------------------------- */
+.section__title > div {
+   background-color: #bdae82;
+}
+/* -------header---------------- */
+@media screen and (max-width: 768px) {
+   .menu__container {
+      background-color: #000;
+   }
+   .menu__list > li > .menu__link {
+      color: #fff;
+   }
+}
+/* ------skills------------------- */
+.list__title,
+.list__subtitle {
+   color: #fff;
+}
+/* ------portfolio------------- */
+.view__time {
+   color: #bdae82;
+}
+.view__time:hover {
+   color: #000;
+   background-color: #bdae82;
+}
+/* -------price----------------- */
+.card__title,
+.card__subtitle {
+   color: #fff;
+}

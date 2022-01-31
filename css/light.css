@@ -1,0 +1,47 @@
+body,
+html {
+   transition: all 1s ease;
+   background-color: #fff;
+}
+.sun {
+   fill: #fff;
+   transition: all 0.3 ease;
+}
+/* ------------------------------ */
+.section__title > div {
+   background-color: #000;
+}
+.section__title > h2 {
+   color: #000;
+}
+/* -------header---------------- */
+@media screen and (max-width: 768px) {
+   .menu__container {
+      background-color: #fff;
+   }
+   .burger__menu._active::before,
+   .burger__menu._active::after {
+      background-color: #000;
+   }
+   .menu__list > li > .menu__link {
+      color: #000;
+   }
+}
+/* -----------skills------------- */
+.list__title,
+.list__subtitle {
+   color: #000;
+}
+/* ------portfolio------------- */
+.view__time {
+   color: #000;
+}
+.view__time:hover {
+   color: #fff;
+   background-color: #bdae82;
+}
+/* -------price----------------- */
+.card__title,
+.card__subtitle {
+   color: #000;
+}
